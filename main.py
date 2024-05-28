@@ -35,7 +35,7 @@ try:
         current_date = datetime.now().date()
 
         # # Check if the current date is the same as the last run date
-        if current_date != last_run_date.date():
+        if current_date == last_run_date.date():
         #     If the script has already been run today, raise an error
              raise Exception("Script already ran today!")
         else:
